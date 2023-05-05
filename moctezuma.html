@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MOCTEZUMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav li:last-child {
+            margin-right: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .textoparrafo {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MOCTEZUMA, quint enemic</h1>
+        <nav>
+            <ul>
+                <li><a href="https://vcasweb.github.io/">Inici</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://media.admagazine.com/photos/618a6196938f88774ad53e12/16:9/pass/84342.jpg"
+            alt="MOCTEZUMA">
+        <p class="textoparrafo"><b>HABILITAT:</b> És un personatge confiat que busca ajuda desesperadament en un moment difícil, però continua sent el rei dels maies. </p>
+        <p><br><br>Constitució: 1 <br><br> Aparença: 1 <br><br> Lideratge: 1 <br><br> Sabiduría: 1 <br><br> </p>
+        <button class="boton" onclick="tirarDado()">Tirar dau</button>
+        <p id="resultado"></p>
+    </main>
+
+    <script>
+        function tirarDado() {
+            var resultado = Math.floor(Math.random() * 12) + 1;
+            document.getElementById("resultado").innerHTML = "El resultat del dau és: " + resultado;
+        }
+    </script>
+</body>
+
+</html>
