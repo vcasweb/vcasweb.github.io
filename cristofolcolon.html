@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRISTÒFOL COLOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav li:last-child {
+            margin-right: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            display: block;
+            margin-top: 20px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .textoparrafo {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        main {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CRISTÒFOL COLOM, quart enemic</h1>
+        <nav>
+            <ul>
+                <li><a href="https://vcasweb.github.io/">Inici</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="https://www.sapiens.cat/uploads/s1/45/45/30/ferran-el-catolic-54530.jpeg"
+            alt="CRISTÒFOL COLOM">
+        <p class="textoparrafo"><b>HABILITAT:</b> És un personatge molt sabi que coneix moltes persones influents i que domina tot sobre el mar i la navegació. </p>
+        <p><br><br>Destresa: 2 (amb armes i navegació) <br><br> Lideratge: 2 <br><br> Sabiduria: 3 <br><br> Influència: 1 <br><br> </p>
+        <button class="boton" onclick="tirarDado()">Tirar dau</button>
+        <p id="resultado"></p>
+    </main>
+
+    <script>
+        function tirarDado() {
+            var resultado = Math.floor(Math.random() * 12) + 1;
+            document.getElementById("resultado").innerHTML = "El resultat del dau és: " + resultado;
+        }
+    </script>
+</body>
+
+</html>
